@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Página de exemplo</title>
+        <style type="text/css">
+            *{ /*Formata todos os elementos da página*/
+                padding:0px; /*espaço entre a borda e o conteúdo do elemento*/
+                margin:0px; /*espaço entre a borda e os elementos externos*/
+            }
+            #topo{
+                width: 100%; /*largura*/
+                height: 280px; /*altura*/
+                text-align: center; /*alinhamento do texto*/
+                clear: both; /* não permite elementos flutuantes ao lado*/
+                background-color: #2E8B57; /*cor de fundo*/
+            }
+            #menu{
+                height: 50px; /*altura*/
+                text-align: center; /*alinhamento do texto*/
+                padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+                background-color: #98FB98; /*cor de fundo*/
+            }
+            #meio{
+                width: 100%; /*largura*/
+                background-color: #8FBC8F; /*cor de fundo*/
+                height: 80%;; /*altura*/
+            }
+            #lateral{
+                float:right; /*define que o elemento deve flutuar à direita*/
+                background-color: #ff6600; /*cor de fundo*/
+                padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+                width: 15% /*largura*/
+            }
+            #conteudo{
+                padding: 50px; /*espaço entre a borda e o conteúdo do elemento*/
+                width: 80%; /*largura*/
+                float: left; /*define que o elemento deve flutuar à esquerda*/
+                background-color: #999999; /*cor de fundo*/
+            }
+            #rodape{
+                clear: both; /*não permite elementos flutuantes ao lado*/
+                text-align: center; /*alinhamento do texto*/
+                padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+                background-color: #cccccc; /*cor de fundo*/
+            }
+            #myphoto{
+                position: absolute;
+                left: 2%;
+                top: 2%;
+            }
+        </style>
+    </head>
+    <body>
+
+    <header id="topo">
+        <h1>CURRÍCULO</h1>
+        <br>
+        <h1>Paulo Henrique de Azevedo Dantas</h1>
+        <br>
+        <p>Data de Nascimento: 23/09/1999</p>
+        <p>Caicó - Rio Grande do Norte - Brasil</p>
+        <p>Telefone: (84) 99676-8137</p>
+        <br>
+        <figure>
+            <img src="images/IMG_20180815_154104_262.jpg" alt="Photoperfil" width="200" height="250" id = "myphoto">
+		</figure>
+    </header>
+
+    <nav id="menu">
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <h1><a href="#dadosPessoais">Dados Pessoais</a></h1>
+        <h1><a href="#">Formação</a></h1>
+        <h1><a href="#exp">Experiências</a></h1>
+    </nav>
+
+    <section id="meio">
+
+        <article id="conteudo">
+            Aqui vai o conteúdo <br />
+            Aqui vai o conteúdo <br />
+            
+        </article>
+
+        <aside id="lateral">
+            <p>Barra lateral</p>
+        </aside>
+
+    </section>
+    
+    <section id="dadosPessoais">
+    
+        <article id = "DP">
+            <p>Possui ensino-medio-segundo-graupela Escola Estadual Dr José Gonçalves de Medeiros(2016). 
+            Tem experiência na área de Ciência da Computação, com ênfase em Sistemas de Informação. 
+            (Texto gerado automaticamente pela aplicação CVLattes)</p>
+        </article>
+        
+    </section>
+
+    <footer id="rodape">
+        <h2>REDES SOCIAIS</h2>
+    </footer>
+        
+    </body>
+</html>  
