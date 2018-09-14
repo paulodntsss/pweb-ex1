@@ -3,21 +3,26 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Página de exemplo</title>
+        <title>Currículo de Paulo Henrique</title>
         <style type="text/css">
             *{ /*Formata todos os elementos da página*/
                 padding:0px; /*espaço entre a borda e o conteúdo do elemento*/
-                margin:0px; /*espaço entre a borda e os elementos externos*/
+                margin: 0px; /*espaço entre a borda e os elementos externos*/
             }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
             #topo{
                 width: 100%; /*largura*/
                 height: 280px; /*altura*/
                 text-align: center; /*alinhamento do texto*/
                 clear: both; /* não permite elementos flutuantes ao lado*/
                 background-color: #2E8B57; /*cor de fundo*/
+                color: white;
             }
             #menu{
-                height: 50px; /*altura*/
+                height: 70px; /*altura*/
                 text-align: center; /*alinhamento do texto*/
                 padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
                 background-color: #98FB98; /*cor de fundo*/
@@ -27,34 +32,63 @@
                 background-color: #8FBC8F; /*cor de fundo*/
                 height: 80%;; /*altura*/
             }
-            #lateral{
-                float:right; /*define que o elemento deve flutuar à direita*/
-                background-color: #ff6600; /*cor de fundo*/
-                padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
-                width: 15% /*largura*/
-            }
+           
             #conteudo{
-                padding: 50px; /*espaço entre a borda e o conteúdo do elemento*/
-                width: 80%; /*largura*/
-                float: left; /*define que o elemento deve flutuar à esquerda*/
-                background-color: #999999; /*cor de fundo*/
+                clear: both; /*não permite elementos flutuantes ao lado*/
+                text-align: center; /*alinhamento do texto*/
+                padding: 70px; /*espaço entre a borda e o conteúdo do elemento*/
+                background-color: #000000; /*cor de fundo*/
+                left: 0%;
+                top: 10%;
             }
             #rodape{
                 clear: both; /*não permite elementos flutuantes ao lado*/
                 text-align: center; /*alinhamento do texto*/
                 padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
                 background-color: #cccccc; /*cor de fundo*/
+                left: 0%;
+                top: 10%;
             }
             #myphoto{
                 position: absolute;
                 left: 2%;
                 top: 2%;
             }
+            #descricao{
+                height: 0px; /*altura*/
+                text-align: center; /*alinhamento do texto*/
+                padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+                background-color: #98FB98; /*cor de fundo*/
+                position: absolute;
+                left: 5%;
+                top: 43%;
+                
+            }
+            .a-color{
+                color: white;
+            }
+            .b-color{
+                color: black;
+            }
+            .space{
+                margin: 30px;
+            }
+            .spaceDois{
+                margin: 30px;
+            }
+            a{
+            text-decoration: none;
+            }
+            .size{
+                font-size: 18px;
+                
+            }
         </style>
     </head>
     <body>
 
     <header id="topo">
+    <br>
         <h1>CURRÍCULO</h1>
         <br>
         <h1>Paulo Henrique de Azevedo Dantas</h1>
@@ -63,23 +97,21 @@
         <p>Caicó - Rio Grande do Norte - Brasil</p>
         <p>Telefone: (84) 99676-8137</p>
         <br>
+        <b><a href="http://lattes.cnpq.br/0054131161303912" class = "b-color" target="_blank"> Curriculo Lattes</a></b>
         <figure>
             <img src="images/IMG_20180815_154104_262.jpg" alt="Photoperfil" width="200" height="250" id = "myphoto">
 		</figure>
     </header>
 
     <nav id="menu">
-        <br>
-        <br>
-        <br>
-        <br>
-        
-        <h1><a href="#dadosPessoais">Dados Pessoais</a></h1>
-        <h1><a href="#">Formação</a></h1>
-        <h1><a href="#exp">Experiências</a></h1>
+        <br><br><br>
+        <b><a class = "spaceDois b-color size" href="#ident">Identificação</a></b>
+        <b><a class = "spaceDois b-color size" href="#formation">Formação</a></b>
+        <b><a class = "spaceDois b-color size"  href="#idioma">Idiomas</a></b>
+        <b><a class = "spaceDois b-color size" href="#rodape">Redes sociais</a></b>
     </nav>
 
-    <section id="meio">
+    <!--<section id="meio">
 
         <article id="conteudo">
             Aqui vai o conteúdo <br />
@@ -91,20 +123,75 @@
             <p>Barra lateral</p>
         </aside>
 
-    </section>
+    </section>-->
+        
+    <section>
     
-    <section id="dadosPessoais">
-    
-        <article id = "DP">
-            <p>Possui ensino-medio-segundo-graupela Escola Estadual Dr José Gonçalves de Medeiros(2016). 
-            Tem experiência na área de Ciência da Computação, com ênfase em Sistemas de Informação. 
-            (Texto gerado automaticamente pela aplicação CVLattes)</p>
+        <article id = "descricao">
+            <p>Possui ensino-medio-segundo-grau pela Escola Estadual Dr José Gonçalves de Medeiros(2016). 
+            Tem experiência na área de Ciência da Computação, com ênfase em Sistemas de Informação.  </p>
         </article>
         
     </section>
-
-    <footer id="rodape">
+    
+    <div>
+    <br>
+    </div>
+    
+    <section class = "a-color" id = "ident">
+     <div  id="conteudo">    
+        
+        <h2>Identificação</h2>
+         <br><br>
+        <p>Nome | Paulo Henrique de Azevedo Dantas
+        <br>
+	       Nome em citações bibliográficas | DANTAS, P. H. A.</p>
+    </div>
+    </section>
+    
+    <div>
+    <br>
+    </div>
+    
+    <section class = "a-color" id = "formation">
+    <div id="conteudo">    
+        
+        <h2>Formação</h2>
+         <br><br>
+        <p> 2017 |   Graduação em andamento em Sistemas de Informação. 
+                    Universidade Federal do Rio Grande do Norte, UFRN, Brasil.
+             <br>
+            2014 - 2016 | Ensino Médio (2º grau). 
+                    Escola Estadual Dr José Gonçalves de Medeiros, EEDJGM, Brasil.  
+ 
+    </div>
+    </section>
+    
+    <div>
+    <br>
+    </div>
+    
+    <section class = "a-color" id = "idioma">
+    <div id="conteudo">
+         <h2>Idioma</h2>
+          <br><br>
+    <p>Inglês | Compreende Pouco, Fala Pouco, Lê Pouco, Escreve Pouco.</p>
+    
+    </div>
+    </section>
+    
+    <div>
+    <br>
+    </div>
+    
+    <footer id="rodape">    
+        
         <h2>REDES SOCIAIS</h2>
+       <br><br>
+        <strong><a class = "space b-color" href="https://www.instagram.com/paulohdant/" target="_blank"> Instagram</a></strong>
+        <b><a class="space b-color" href="https://www.facebook.com/profile.php?id=100003495128762/" target="_blank"> Facebook</a></b>
+        <b><a class="space b-color" href="https://www.linkedin.com/in/paulo-henrique-37765642/" target="_blank"> LinkedIn</a></b>
+    
     </footer>
         
     </body>
